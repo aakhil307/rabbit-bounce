@@ -2,8 +2,9 @@
 
 [ext_resource type="Texture2D" uid="uid://du5c4fdqo5uh6" path="res://Jump (32x32).png" id="1_nrcqd"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_pbqrc"]
-size = Vector2(53, 83)
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_pbqrc"]
+radius = 31.0
+height = 94.0
 
 [node name="CharacterBody2D" type="CharacterBody2D" unique_id=2069537481]
 
@@ -14,5 +15,5 @@ scale = Vector2(2.65625, 2.96875)
 texture = ExtResource("1_nrcqd")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1114829516]
-position = Vector2(79.5, 536.5)
-shape = SubResource("RectangleShape2D_pbqrc")
+position = Vector2(78, 534)
+shape = SubResource("CapsuleShape2D_pbqrc")
